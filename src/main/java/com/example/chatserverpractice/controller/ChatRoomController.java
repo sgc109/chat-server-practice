@@ -1,6 +1,6 @@
 package com.example.chatserverpractice.controller;
 
-import com.example.chatserverpractice.ChatRoomRepository;
+import com.example.chatserverpractice.repository.ChatRoomRepository;
 import com.example.chatserverpractice.model.ChatRoom;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -41,6 +41,6 @@ public class ChatRoomController {
     @GetMapping("/rooms/{roomId}")
     @ResponseBody
     public ChatRoom findRoomById(@PathVariable String roomId) {
-        return chatRoomRepository.findRoomByid(roomId);
+        return chatRoomRepository.findRoomById(roomId);
     }
 }
