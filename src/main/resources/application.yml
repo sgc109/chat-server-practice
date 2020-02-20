@@ -4,5 +4,3 @@ spring:
       enabled: true
     restart:
       enabled: true
-  freemarker:
-    cache: false
