@@ -10,3 +10,10 @@
 * [ ] CI
 * [ ] CD
 * [ ] Documentation
+
+
+### Business logic
+* Send a message to every users excepting those who are already talking with me
+* Send a message to specific user in same room
+* Leave a room to quit talking with a user
+  - I can get a new message from the user again
