@@ -5,10 +5,10 @@ import lombok.Data;
 @Data
 public class ChatMessage {
     public enum MessageType {
-        JOIN, TALK
+        JOIN, SEND, LEAVE, BROADCAST
     }
     private MessageType type;
-    private String roomId;
+    private String receiver;
     private String sender;
-    private String message;
+    private String content;
 }
