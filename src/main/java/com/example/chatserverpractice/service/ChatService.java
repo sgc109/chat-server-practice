@@ -3,11 +3,9 @@ package com.example.chatserverpractice.service;
 import com.example.chatserverpractice.Router;
 import com.example.chatserverpractice.model.ChatMessage;
 import com.example.chatserverpractice.model.User;
-import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
 
 import java.util.Map;

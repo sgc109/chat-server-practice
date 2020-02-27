@@ -19,7 +19,7 @@ class APIJoinHandler : WebsocketAPIHandler {
 
     override fun handle(session: WebSocketSession, msg: ChatMessage) {
         val id = UUID.randomUUID().toString()
-        msg.receiver = id
+        msg.sender = id
         session.sendMessage(TextMessage(Gson().toJson(msg)))
         val newUser = User()
         newUser.session = session

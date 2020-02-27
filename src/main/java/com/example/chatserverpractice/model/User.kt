@@ -6,6 +6,6 @@ import java.util.*
 data class User (
     var id: String = "",
     var lastLoginDate: Long = 0,
-    var userTalkingWith: MutableSet<String> = HashSet(),
+    var roomIds: MutableSet<String> = HashSet(),
     var session: WebSocketSession? = null
 )

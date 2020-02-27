@@ -2,7 +2,7 @@ package com.example.chatserverpractice.model;
 
 data class ChatMessage(
     var type: MessageType,
-    var receiver: String,
+    var roomId: String,
     var sender: String,
     var content: String
 ) {
